@@ -1,0 +1,249 @@
+
+                                        Assignment of Data Structue
+
+
+
+
+
+Q. No. 1-Discuss string slicing and providing examples.
+
+ 
+
+ Ans-Strng slicing n Python allows you to extract a specifiic porton of a string by specific range of indces. Using the syntax string [start:stop:step], you can select characters from the start index up to , but not incuding, the stop index wth an optional step to skip characters. Thisfeature is highly useful for tasks like reversing strings, extracting substrings, and manipulating text efficiently, making it a fundamental concept in python programming. 
+ String  slicing is the start index is where the slice begins(inclusive), and stop index is where it ends (exclusive), and step is the interval between characters (optional). This allows efficient string manipulation, such as extracting substrings or reversing a string.
+  String slicing in python allows you to extract a portion of string by specifying a start and end index. It follows the format atring[start:end], whwre start is the index whwre slicing begins (inclusive) and end is the index whwre it ends (exclusive).
+    
+  For example, with the string my_string= "Hello World!". if you use my_string[7:12], It will return "World".
+  
+  If you omit start, it starts from the beginning of the string. If you omit end, it goes to the end of the string.
+  Negative indices are also valid.string[-1]refers to the last character, string[-2] refers to the second last, and so on.
+  Python String Slicing Useful- 
+  
+  
+   -Subsetting Data: It makes it simple to access and manipulate substrings inside a bigger text since it enables you to extract specific chunks of a string.
+   
+   - Data Extract: It makes the process of shifting through strings to find relevant information and extracting it, which is essential for tasks like data cleaning and analysis.
+   
+   -String Manipulatation: Slicing makes it easier to manipulate strings in a variety of ways,including reversing strings and extracting words or characters for additional use.
+   
+   
+   Syntax of String slicing in Python 
+     
+      <String Name>[start:stop:step]
+
+      
+      Str="string slicing"
+  
+     
+                                s    t     r     i     n    g    s    l     i     c     i   n   g
+        
+               +ve index        0    1     2     3     5    6    7     8    9    10   11   12   13
+               
+               
+ -ve index      -14  -13   -11   -10    -9   -8   -7    -6   -5   -4   -3   -2   -1
+ 
+               
+                
+                
+a)  print (str[3:6])
+                
+          
+      Here slicing is atating from index 3 (from alphabet 'i'and ending position is before 6(till alphabet'i')
+
+
+b)  print ([2:14:2])
+   
+              
+     rn lcn
+                 
+     
+c) print(str[8:25:3]
+ 
+               
+   li
+      
+
+          
+               
+ 
+ Q.No 2-   Explain the key features of lists in python.
+ 
+Ans-  Python list can store an ordered collection of items, or elements,of varying types.Lists are also a type of built in data structure in Python(along with tuples, sets, and dictionaries), 
+
+ 8 ways to modify a python List
+ 
+1- Index method 
+ 
+2- Count method 
+ 
+3- Sort method
+ 
+4- Append method 
+
+ 5- Remove method 
+ 
+6- Pop method
+
+ 7- Extend method 
+
+ 8- Insert method
+ 
+
+ List are mutable and dynamic; list items can be added remove or changed after yhe list is defined.
+ 
+1- Index Method 
+   z     =       [4,1,5,4,10,4]
+   
+                   index          0 1 2 3 4  5
+   
+   
+   Features of lists include the following features or character:
+   - List can contain items of different types at the same time (including integers,floating point numbers, strings and booean values).
+   - List are mutable and dynamic; list items can be added, removed or changed after the list is defined.
+   -List are order;newly added items can be added, removed or changed after the list is defined.
+   -List are ordered, newly added items will be placed at the end of the list.
+   - List use zero- based indexing; every list item has an associated index and the first items index is 0.
+   -Duplicated list item are allowed.
+   -List can be nested within other list indefinitely.
+   
+   
+   
+   Q.No.3- Describe how to access, modify and delete element in a list with example.
+   
+   Ans- In Python, we can access,modify, and delete elements in a list using indexing and buil- in methods. Here are two example -
+   
+   1. Accessing Elements in a list
+   
+   To access an element in a list, you use its index (starting from 0).
+  
+  2. Modifying Elements in a list
+  
+   You can modify an element by assigning a new value to a specific index
+   
+   3. Deleting Element from a list
+   
+   You can delete an element using the del statement or the remove() method.
+
+
+
+
+Q.No. 4 - Compare and contrast tuples and list with example.
+
+
+Ans- List and Tuples in Python are two classes of Python Data Structures. The list structure is dynamic, and readily changed whereas the tuple structure is static and cannot be changed. This means that the tuple is generally faster than the lists. List are denoted by square brackets and tuples are denoted with paranthisis.
+ 
+ Difference between List and Tuple in Python 
+ 
+ S.no.     List                                                                   Tuple
+ 
+  
+ 1       List are mutable                                                      Tuples are immutable
+   
+  
+ 2       The implication of iterations is Time consume                                                                                                                                                The implication of iteraytions is  comparatively faster
+
+  
+ 3       The list is better performing operations such a                                                                                                                                            Tuple data type is appropriate for accessing
+     
+           as insertion and deletion
+ 
+        
+  4       List consume more memory                         
+                                                                      Tuple consumes less memory 
+  
+ 5       Unexpected changes and errors                                tuples dont change they are far less error- prone
+
+
+  
+  
+
+
+Q. No. 5- Describe key features of sets and provide the example of their use.
+
+
+
+Ans- A set is a collection of unique data, meaning that elements within a set cannot be duplicated.
+
+ 
+
+  if we need to store 
+information about student IDs, a set is suitable since student IDs cannot have duplicates.
+ 
+  
+   
+           112    114   116   118   115
+ 
+ 
+                     
+set of Student  ID 
+Create a set in Python
+ 
+In Python , we create sets by placing all the elements inside curly braces {}, separated by commas.
+
+A set can have any number of items and they may be of different types(integer, float, tuple,string,etc.) But a set cannot have mutable elements like list,sets or dictionaries 
+ as its elements.
+  lets see an example - 
+  
+  Create an Empty Set in Python
+  
+  Creating an empty set is a bit tricky.Empty curly braces {} will make an empty dictionary in python 
+  
+ 
+
+ 
+  
+Q.No.6 Describe the use of tuple and sets in Python programming.
+ 
+ 
+ 
+Ans-Tuple and sets are both data structures in Python. 
+Tuples are ordered collections of elements which are immutable. Sets, on the other hand, are unordered collections of unique element.
+  
+ 
+ Tuple in Python-
+  The POS system may have a tuple that contains the details of each order made by a customer. This tuple may include the customers name, the items ordered, the quntities ordered, and the total cost of other.
+  In python , a tuple could be a data type comparable  to a list but immutable. Atuple is made by enclosing a sequence of values in parantheses, separated by commas.
+  Tuple can be utilized in Python in a restaurants point-of-sale(POS) framework. Tuple
+  can be created by placing elements inside parathesies, separated by cammas.
+  
+ 
+ syntax of tuple-
+    variable_name=(tuple element separated by commas)
+  
+  
+ Set in Python-
+   In Python, a set is collection of unique elements that are unordered and mutable. One industry example of using sets in Python is data analysis. 
+   The analyst can use a Python set  to efficiently extract a list of unique products. 
+   Set are created by placing element inside curly braces,separated by commas. 
+   
+  
+ Sets are better choice compare to tuple because sets are mutable so sets can be change after creation.
+   
+   
+ Syntex of set-
+    variable_name={set elements separated by comma}
+   
+   
+
+
+Q.No.7- Describe how to add, modify, and delete items in a dictionary with examples.
+ 
+  
+  
+Ans- In Python, dictionaries are mutable data structures that allow you to store key value pairs. 
+Dictionary can be created using the dict() 
+   constructor or curly braces'{}'. Once you have created a dictionary, you can add, remove or update element using the methods dict.update(),dict.
+
+   
+ 
+  Q.No-8- Discuss the importance of dictionary keys being immutable and provide example.
+   
+  
+ Ans- In Python, dictionary keys must be immutable due to several fundamental reasons. Immutable objects, once created, cannot be modified,ensuring their stability and relaibility as dictionary keys. 
+This immutablility property is crucial for dictionary operations such as retrieving, inserting, and deleting key- value pairs efficiently.
+   
+Firstly, the immutablity of dictionary keys guarentees their uniqueness. Since dictionaries are design to provide a mapping between unique keys and corresponding values immutability ensure that keys remain costant throughout their lifetime. If key were mutable,their value could change, leading to unpredictable behavior within the dictionary.Python ensur that dictionary keys retain their original value, enabling consistent and accurate retrieval of associated values.
+   
+   Secondly,Immutabbility allows dictionary keys dictionary keys to be hashable. Hashing is a fundamental concept in Python dictionaries, where each keys is transformed into a unique  hash value.if keys are mutable, hash value could change.
+   Additionally, immutability provides a level of security and integrity to dictionaries.  
+   
